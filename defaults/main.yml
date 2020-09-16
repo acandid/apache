@@ -7,4 +7,3 @@ apache_docroot: /var/www/html
 # Domain
 apache_domain: almircandido.com
 #
-
