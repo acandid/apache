@@ -1,0 +1,23 @@
+<VirtualHost *:443>
+  ServerName {{ apache_domain }}
+  DocumentRoot {{ apache_docroot }}
+
+  ErrorLog {{ apache_errorlog }}{{ apache_domain }}-error.log
+  CustomLog {{ apache_customlog }}{{ apache_domain }}-access.log combined
+
+  SSLEngine on
+  SSLCipherSuite AES256+EECDH:AES256+EDH
+  SSLProtocol All -SSLv2 -SSLv3
+  SSLHonorCipherOrder On
+  SSLCertificateFile {{ apache_crt_path }}{{ apache_domain }}.crt
+  SSLCertificateKeyFile {{ apache_key_path }}{{ apache_domain }}.key
+  SSLCertificateChainFile {{ apache_ca_path }}{{ apache_domain }}_ca.crt
+
+  <Directory {{ apache_docroot }}>
+    AllowOverride All
+    Options -Indexes +FollowSymLinks
+    Require all granted
+  </Directory>
+
+
+</VirtualHost>

@@ -1,0 +1,31 @@
+---
+dependencies: []
+#
+galaxy_info:
+  role_name: apache
+  author: acandid
+  description: Install and configuring the Apache SSL on RHEL/CentOS, Debian 9,10 and Ubuntu 20.04
+  company: "ALmir Candido"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.9
+  platforms:
+    - name: EL
+      versions:
+        - 6
+        - 7
+        - 8
+    - name: Debian
+      versions:
+        - buster
+    - name: Ubuntu
+      versions:
+        - focal
+  galaxy_tags:
+    - web
+    - apache2
+    - apache
+    - webserver
+    - html
+    - httpd
+#
+allow_duplicates: true

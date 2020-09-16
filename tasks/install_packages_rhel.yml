@@ -1,0 +1,7 @@
+---
+- name: Install Web packages RedHat family
+  yum:
+    name: "{{ apache_web_pkg }}"
+    state: present
+  when: ansible_os_family == 'RedHat'
+...

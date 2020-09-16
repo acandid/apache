@@ -1,0 +1,20 @@
+---
+###
+apache_web_pkg:
+  - httpd
+  - mod_ssl
+#
+#
+apache_errorlog: "/var/log/httpd/"
+apache_customlog: "/var/log/httpd/"
+#
+apache_crt_path: /etc/pki/tls/certs/
+#
+apache_key_path: /etc/pki/tls/private/
+#
+apache_ca_path: /etc/pki/tls/certs/
+#
+apache_vhost_path: /etc/httpd/conf.d/
+#
+apache_web_srv: httpd
+#

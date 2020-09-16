@@ -1,0 +1,10 @@
+---
+# defaults file for apache
+#
+# DocumentRoot
+apache_docroot: /var/www/html
+#
+# Domain
+apache_domain: almircandido.com
+#
+

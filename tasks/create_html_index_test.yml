@@ -1,0 +1,6 @@
+---
+- name: Create my test html index
+  copy:
+    content: "MY WEB SERVER IS UP\n"
+    dest: "{{ apache_docroot }}/index.html"
+...
